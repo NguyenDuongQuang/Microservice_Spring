@@ -32,4 +32,5 @@ public interface StaffRepository extends JpaRepository<Staff, Integer> {
     @Query(value = "SELECT * FROM nhan_vien WHERE so_dien_thoai = ?",nativeQuery = true)
     Staff findBySDT(String soDienThoai);
 
+    Optional<Staff> findById(Long id);
 }

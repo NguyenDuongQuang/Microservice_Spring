@@ -34,7 +34,7 @@ public class CustomerController {
     }
 
     @PutMapping("/update")
-    public ResponseEntity<?> updateCustomer(@RequestBody CustomerDto customerDto) {
+    public ResponseEntity<Customer> updateCustomer(@RequestBody CustomerDto customerDto) {
         return customerService.UpdateCustomer(customerDto);
     }
 
@@ -45,6 +45,6 @@ public class CustomerController {
     }
     @GetMapping("/search/{search}")
     public List<Customer> searchAll(@PathVariable("search") String search) {
-        return customerRepository.findByAll(search);
+        return customerService.searchAll(search);
     }
 }
