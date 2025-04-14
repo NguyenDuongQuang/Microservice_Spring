@@ -19,7 +19,7 @@ public interface ProductService {
 
     ResponseEntity<?>searchProductAll(String search);
 
-    ResponseEntity<?>getProductPrice(Float gia1, float gia2);
+    ResponseEntity<?>getProductPrice(Float gia1, Float gia2);
 
     List<Object> productDetail(long id_Product);
 }

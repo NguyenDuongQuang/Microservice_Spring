@@ -17,6 +17,7 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
     @Query(value = "select * from san_pham where id = ? and is_deleted = false", nativeQuery = true)
     Product findByID(Long id);
 
+
     @Query(value = "select * from san_pham where is_deleted = false and (ten_san_pham LIKE %?1% or gia LIKE %?1%) and trang_thai = 0;", nativeQuery = true)
     List<Product> findByAll(String input);
 
@@ -30,7 +31,8 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
     List<Product> findByLoaiSanPham(long loaiSanPham_id);
 
     @Query(value = "SELECT * FROM san_pham WHERE gia BETWEEN :gia1 AND :gia2 AND is_deleted = false and trang_thai = 0", nativeQuery = true)
-    List<Product> findTheoGia(@Param("gia1") Float gia1, @Param("gia2") Float gia2);
+    List<Product> findByGia(@Param("gia1") Float gia1, @Param("gia2") Float gia2);
 
 
+    Float gia(Float gia);
 }

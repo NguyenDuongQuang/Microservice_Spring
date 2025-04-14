@@ -25,5 +25,32 @@ public class ProductDto {
 
     private String product_image;
 
+
+
+    private Long id_SPCT;
+
+
+
+    //Dùng để add to cart bên phía customer
+
+
+    private Long product_id;
+
+    private int soLuongDaChon;
+
+    private int donGia;
+
     private int soLuong;
+
+    private int tongTien;
+
+    private Long id_bill;
+
+    private Integer soLuongHienCo;
+
+    private Long image_id;
+
+    private String image_product;
+
+    private String email_user;
 }
