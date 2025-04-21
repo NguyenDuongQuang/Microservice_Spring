@@ -10,6 +10,8 @@
         <option value="$PROJECT_DIR$/authservice/pom.xml" />
         <option value="$PROJECT_DIR$/api_getway/pom.xml" />
         <option value="$PROJECT_DIR$/configservice/pom.xml" />
+        <option value="$PROJECT_DIR$/discoveryservice/pom.xml" />
+        <option value="$PROJECT_DIR$/monitoradmin/pom.xml" />
       </list>
     </option>
   </component>
