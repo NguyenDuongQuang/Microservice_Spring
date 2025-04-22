@@ -14,6 +14,7 @@
         <module name="configservice" />
         <module name="accountservice" />
         <module name="orderservice" />
+        <module name="cartservice" />
       </profile>
     </annotationProcessing>
   </component>
@@ -22,6 +23,7 @@
       <module name="accountservice" options="-parameters" />
       <module name="api_getway" options="-parameters" />
       <module name="authservice" options="-parameters" />
+      <module name="cartservice" options="-parameters" />
       <module name="configservice" options="-parameters" />
       <module name="discoveryservice" options="-parameters" />
       <module name="monitoradmin" options="-parameters" />

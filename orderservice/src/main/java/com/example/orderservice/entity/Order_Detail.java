@@ -29,7 +29,11 @@ public class Order_Detail extends Base{
     @ManyToOne(fetch = FetchType.EAGER)
     private Order order;
 
-    @JoinColumn(name = "san_pham_chi_tiet_id",referencedColumnName = "id")
-    @ManyToOne(fetch = FetchType.EAGER)
-    private Product_Detail productDetail;
+//    @JoinColumn(name = "san_pham_chi_tiet_id",referencedColumnName = "id")
+//    @ManyToOne(fetch = FetchType.EAGER)
+//    private Product_Detail productDetail;
+    //Dùng OpenFegin
+
+    @Column(name = "san_pham_chi_tiet_id")
+    private int sanPhamChiTietId;
 }

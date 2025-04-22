@@ -49,6 +49,16 @@ public class Order extends Base{
     @Column(name = "loai_hoa_don", columnDefinition = "int null")
     private int loaiHoaDon;
 
+    @Column(name = "trang_thai_id")
+    private int trangThaiId;
+
+    @Column(name = "khach_hang_id")
+    private int khachHangId;
+
+
+    @Column(name = "nhan_vien_id")
+    private int nhanVienId;
+
 //    @ManyToOne
 //    @JoinColumn(name = "trang_thai_id", referencedColumnName = "id")
 //    private TrangThai trangThai;
@@ -61,4 +71,5 @@ public class Order extends Base{
 //    @JoinColumn(name = "nhan_vien_id", referencedColumnName = "id")
 //    private NhanVien nhanVien;
 
+    //Dùng OpenFegin
 }
