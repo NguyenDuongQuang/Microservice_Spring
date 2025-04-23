@@ -20,12 +20,12 @@ public class StaffController {
     @Autowired
     private StaffRepository staffRepository;
 
-    @GetMapping("get-all")
+    @GetMapping("/get-all")
     public List<Staff> getAll() {
         return staffService.findCategoryAll();
     }
 
-    @GetMapping("search/{search}")
+    @GetMapping("/search/{search}")
     public List<Staff> getAllSearch(@PathVariable("search") String search) {
         return staffService.searchAll(search);
     }
